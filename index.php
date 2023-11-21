@@ -16,9 +16,9 @@
         <div class="RightCont">
             <div class="FormCont">
                 <div class="LogoCont">Dev University</div>
-                <form action="" method="post" class="FormContent">
-                    <input type="email" name="Email" id="Email" placeholder="Email" class="inputype">
-                    <input type="password" name="Password" id="Password" placeholder="Password" class="inputype">
+                <form action="login.php" method="post" class="FormContent">
+                    <input type="email" name="email" id="nome" placeholder="Email" class="inputype">
+                    <input type="password" name="senha" id="Password" placeholder="Password" class="inputype">
                     <button type="submit" class="SubmitButton">Log in</button>
                 </form>
                 <div class="or">

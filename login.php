@@ -1,50 +1,30 @@
 <?php
-include('conexao.php');
+include("conexao.php");
 session_start();
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-
-if ($conexao === false) {
-    die("Erro de conexão com o banco de dados: " . mysqli_connect_error());
-}
-
-$query = "SELECT email, senha FROM register.emailsenha WHERE email = ?";
-$stmt = mysqli_prepare($conexao, $query);
-
-if ($stmt) {
-    mysqli_stmt_bind_param($stmt, "s", $email);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_store_result($stmt);
-
-    if (mysqli_stmt_num_rows($stmt) == 1) {
-        mysqli_stmt_bind_result($stmt, $db_email, $db_senha_hash);
-        mysqli_stmt_fetch($stmt);
-
-        if (password_verify($senha, $db_senha_hash)) {
-            // Senha correta, proceda com o login
-            $_SESSION['email'] = $email;
-            mysqli_stmt_close($stmt);
-            mysqli_close($conexao);
-            header('Location: TabelaNotas.php');
-            exit();
-        } else {
-            // Senha incorreta, exiba uma mensagem de erro
-            echo "Senha incorreta";
-        }
-    } else {
-        // E-mail não encontrado, exiba uma mensagem de erro
-        echo "E-mail não encontrado";
-    }
-
-    mysqli_stmt_close($stmt);
+if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {
+    print "Please enter your email address";
 } else {
-    // Erro na preparação da consulta, exiba uma mensagem de erro
-    die("Erro na preparação da consulta");
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
+
+
+    $sql = "SELECT * FROM register.emailsenha WHERE email = ? AND senha = ?";
+    $stmt = $conexao->prepare($sql);
+    $stmt->bind_param("ss", $email, $senha);
+    $stmt->execute();
+    $res = $stmt->get_result();
+
+    $row = $res->fetch_object();
+    $qtd = $res->num_rows;
+    
+    if ($qtd > 0) {
+        $_SESSION["email"] = $email;
+        
+       
+    } else {
+        print "Não foi possível realizar o login!";
+        
+    }
 }
-
-mysqli_close($conexao);
-
-// Se chegou aqui, algo deu errado, redirecione para a página de login
-exit();
 ?>

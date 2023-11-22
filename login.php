@@ -21,6 +21,8 @@ if ($stmt) {
 
     $rows = mysqli_stmt_num_rows($stmt);
 
+    //fazer redirecionamento para o painel de notas
+    
     if ($rows == 1) {
         $_SESSION['email'] = $email;
         header('Location: TabelaNotas.php');

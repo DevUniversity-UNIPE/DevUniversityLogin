@@ -20,7 +20,7 @@ if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {
     
     if ($qtd > 0) {
         $_SESSION["email"] = $email;
-        
+        header('Location: TabelaNotas.php');
        
     } else {
         print "Não foi possível realizar o login!";

@@ -19,12 +19,12 @@
         <div class="FormCont">
             <p class="welcomeMessage"> Welcome to </p>
             <p class="logoName">Dev University</p>
-            <form action="cadastrar.php" method="post">
+            <form action="CadAlunoPHP.php" method="post">
                 <div class="inputPlaceholder">
-                    <input type="text" placeholder="Nome do Aluno:" name="Nome">
-                    <input type="text" placeholder="Matricula:" name="Senha">
-                    <input type="text" placeholder="1ª Nota" name="PrimeiraNota">
-                    <input type="text" placeholder="2ª Nota:" name="SegundaNota">
+                    <input type="text" placeholder="Nome do Aluno:" name="nome">
+                    <input type="text" placeholder="Matricula:" name="matricula">
+                    <input type="text" placeholder="1ª Nota" name="nota1">
+                    <input type="text" placeholder="2ª Nota:" name="nota2">
                     <div>
                         <button type="submit" class="SubmitButton">Cadastrar!</button><br>
             </form>

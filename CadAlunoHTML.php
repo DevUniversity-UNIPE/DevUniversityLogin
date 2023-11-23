@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registro.css">
     <title>Registro</title>
-    
+
 </head>
 
 <body>
@@ -20,13 +20,13 @@
             <p class="welcomeMessage"> Welcome to </p>
             <p class="logoName">Dev University</p>
             <form action="cadastrar.php" method="post">
-                <div class = "inputPlaceholder">
+                <div class="inputPlaceholder">
                     <input type="text" placeholder="Nome do Aluno:" name="Nome">
                     <input type="text" placeholder="Matricula:" name="Senha">
                     <input type="text" placeholder="1ª Nota" name="PrimeiraNota">
                     <input type="text" placeholder="2ª Nota:" name="SegundaNota">
-                <div>
-                <button type="submit" class="SubmitButton">Cadastrar!</button><br>
+                    <div>
+                        <button type="submit" class="SubmitButton">Cadastrar!</button><br>
             </form>
         </div>
     </div>

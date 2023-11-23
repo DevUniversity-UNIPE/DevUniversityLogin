@@ -16,7 +16,7 @@
         <div class="RightCont">
             <div class="FormCont">
                 <div class="LogoCont">Dev University</div>
-                <form action="login.php" method="post" class="FormContent">
+                <form action="Login.php" method="post" class="FormContent">
                     <input type="email" name="email" id="nome" placeholder="Email" class="inputype">
                     <input type="password" name="senha" id="Password" placeholder="Password" class="inputype">
                     <button type="submit" class="SubmitButton">Log in</button>

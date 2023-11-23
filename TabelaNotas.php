@@ -24,7 +24,8 @@ if ($result->num_rows > 0) {
         <td>" . $row["nota1"] . "</td>
         <td>" . $row["nota2"] . "</td>
         <td>" . $media . "</td>
-        <td><a href='excluir_usuario.php?matricula=" . $row["matricula"] . "'>Excluir</a></td>
+        <td><a href='DELETE.php?matricula=" . $row["matricula"] . "'>Excluir</a></td>
+        
                 </tr>";
     }
 

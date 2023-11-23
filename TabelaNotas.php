@@ -11,6 +11,12 @@
 <body>
     <div class="table-container">
         <?php
+        session_start();
+        if (!isset($_SESSION["email"])) {
+            header("Location: login.php");
+            exit();
+        }
+    
         include('conexao.php');
         $sql = "SELECT * FROM register.users;";
         $result = $conexao->query($sql);
@@ -51,6 +57,10 @@
     <form action="CadAlunoHTML.php" method="get">
         <button type="submit" class="CadAluno">Cadastrar Aluno</button>
     </form>
+    <form action="logout.php" method="post">
+        <button type="submit" class="Logout">Finalizar Sessão</button>
+    </form> 
+
 </body>
 
 </html>

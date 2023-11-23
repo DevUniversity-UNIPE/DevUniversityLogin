@@ -10,6 +10,13 @@
 </head>
 
 <body>
+     <?php
+        session_start();
+        if (!isset($_SESSION["email"])) {
+            header("Location: login.php");
+            exit();
+        }
+    ?>
     <div class="logoImg">
         <div class="LeftCont">
             <img src="./image/logoU1.png" class="Logo">

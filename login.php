@@ -1,5 +1,6 @@
 <?php
 include("conexao.php");
+
 session_start();
 
 if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {

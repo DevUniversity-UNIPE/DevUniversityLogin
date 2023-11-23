@@ -1,38 +1,53 @@
-<?php
-include('conexao.php');
-$sql = "SELECT * FROM register.users;";
-$result = $conexao->query($sql);
+<!DOCTYPE html>
+<html lang="en">
 
-if ($result->num_rows > 0) {
-    echo "<table border='1'>
-            <tr>
-                <th>Nome</th>
-                <th>Matrícula</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Média</th>
-            </tr>";
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tabela.css">
+</head>
 
-    while ($row = $result->fetch_assoc()) {
+<body>
+    <div class="table-container">
+        <?php
+        include('conexao.php');
+        $sql = "SELECT * FROM register.users;";
+        $result = $conexao->query($sql);
 
-        $media = ($row["nota1"] + $row["nota2"]) / 2;
+        if ($result->num_rows > 0) {
+            echo
+            "<table class='custom-table'>
+                    <tr>
+                        <th class='header-cell'>Nome</th>
+                        <th class='header-cell'>Matrícula</th>
+                        <th class='header-cell'>Nota 1</th>
+                        <th class='header-cell'>Nota 2</th>
+                        <th class='header-cell'>Média</th>
+                        <th class='header-cell'>Ação</th>
+                    </tr>";
 
+            while ($row = $result->fetch_assoc()) {
+                $media = ($row["nota1"] + $row["nota2"]) / 2;
 
-        echo "<tr>
-        <td>" . $row["nome"] . "</td>
-        <td>" . $row["matricula"] . "</td>
-        <td>" . $row["nota1"] . "</td>
-        <td>" . $row["nota2"] . "</td>
-        <td>" . $media . "</td>
-        <td><a href='DELETE.php?matricula=" . $row["matricula"] . "'>Excluir</a></td>
-        
+                echo "<tr>
+                <td class='data-cell'>" . $row["nome"] . "</td>
+                <td class='data-cell'>" . $row["matricula"] . "</td>
+                <td class='data-cell'>" . $row["nota1"] . "</td>
+                <td class='data-cell'>" . $row["nota2"] . "</td>
+                <td class='data-cell'>" . $media . "</td>
+                <td class='data-cell'><a class='delete-link' href='DELETE.php?matricula=" . $row["matricula"] . "'>Excluir</a></td>
                 </tr>";
-    }
+            }
 
-    echo "</table>";
-} else {
-    echo "0 resultados";
-}
+            echo "</table>";
+        } else {
+            echo "0 resultados";
+        }
 
+        $conexao->close();
+        ?>
+    </div>
+</body>
 
-$conexao->close();
+</html>

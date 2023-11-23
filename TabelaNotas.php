@@ -48,6 +48,9 @@
         $conexao->close();
         ?>
     </div>
+    <form action="CadAlunoHTML.php" method="get">
+        <button type="submit" class="CadAluno">Cadastrar Aluno</button>
+    </form>
 </body>
 
 </html>

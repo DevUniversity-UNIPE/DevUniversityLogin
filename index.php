@@ -26,7 +26,7 @@
                 </div>
                 <div class="BottomCont">
                 <div class="Cadastro">
-                    <a href="registro.php" class="Cad">Cadastre-se</a>
+                    <a href="CadProfHTML.php" class="Cad">Cadastre-se</a>
                 </div>
             </div>
             </div>

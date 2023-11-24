@@ -24,7 +24,6 @@
     </div>
     <div class="container">
         <div class="FormCont">
-            <p class="welcomeMessage"> Welcome to </p>
             <p class="logoName">Dev University</p>
             <form action="CadAlunoPHP.php" method="post">
                 <div class="inputPlaceholder">
@@ -34,6 +33,11 @@
                     <input type="text" placeholder="2ª Nota:" name="nota2">
                     <div>
                         <button type="submit" class="SubmitButton">Cadastrar!</button><br>
+                    </div>
+                </div>
+            </form>
+            <form action="TabelaNotas.php" method="get">
+                <button type="submit" class="TabNotasBtn"> Voltar </button>
             </form>
         </div>
     </div>

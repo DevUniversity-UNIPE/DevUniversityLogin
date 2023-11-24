@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.table-container {
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.header-cell, .data-cell {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-cell {
+    background-color: #333;
+    color: #fff;
+}
+
+.data-cell {
+    background-color: #fff;
+}
+
+.data-cell:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.delete-link {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    text-decoration: underline;
+}

@@ -95,7 +95,7 @@ input{
     font-family: 'Sora', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: #4CB5F9;
+    background-color: #083f64;
     width: 200px;
     height: 32px;
     color: white;
@@ -109,7 +109,7 @@ input{
     font-family: 'Sora', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: #083f64;
+    background-color: #4CB5F9;
     width: 100px;
     height: 32px;
     color: white;

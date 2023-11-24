@@ -16,7 +16,7 @@
     height: 400px;
     width: 370px;
     border: 1px solid rgba(0, 0, 0, 0.164);
-   
+    background-color: rgba(255, 255, 255, 0.616);
 
 }
 
@@ -32,11 +32,11 @@
     justify-content: center;
     gap: 7px;
     height: 100px;
-
 }   
 
 ::placeholder{
     font-family: 'Sora', sans-serif;
+    color: rgba(0, 0, 0, 0.566);
 }
 
 .inputype{
@@ -51,13 +51,21 @@
     font-family: 'Sora', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: #4CB5F9;
+    background-color: #2b57d3;
     width: 268px;
     height: 32px;
     color: white;
     border-radius: 6px;
     border: none;
     align-items: center;
+}
+
+.SubmitButton:hover{
+    background-color: #2b6ed3;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px black;
+    
 }
 
 .Cad{
@@ -68,4 +76,22 @@
 
 .Logo{
     height: 400px;
+}
+
+.warning {
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.317);
+}
+
+body {
+    background-image: url('./image/students.jpeg'), linear-gradient(90deg, rgba(27,27,82,1) 0%, rgba(9,9,121,0.7651435574229692) 40%, rgba(9,9,121,0.7035189075630253) 60%, rgba(27,27,82,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    filter: blur(100%);
 }

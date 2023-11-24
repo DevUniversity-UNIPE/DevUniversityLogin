@@ -4,39 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CadProf.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <h1 class="pageTitle animateanimated animatebackInDown">Bem vindo a página de cadastro!</h1>
     <div class="container">
-    <?php
-        session_start();
-        if (!isset($_SESSION["email"])) {
-            header("Location: login.php");
-            exit();
-        }
-    ?>
-    <div class="logoImg">
-        <div class="LeftCont">
+        <div class="LeftCont animateanimated animatebackInLeft">
             <img src="./image/logoU1.png" class="Logo">
         </div>
-    </div>
-        <div class="FormCont">
-            <p class="welcomeTxt"> Welcome to </p> 
-            <p class="logoName">Dev University</p>
-            <div class="inputPlaceholder">
-                <form action="CadProfPHP.php" method="post">
-                    <input type="email" placeholder="Digite seu email" name="email" class="inputype"><br>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha:" class="inputype"><br>
-                    <div class="DivSubmitBtn">
-                        <button type="submit" class= "SubmitBtn">Cadastrar</button>
-                    </div>
+        <div class="RightCont animateanimated animatebackInRight">
+            <div class="FormCont">
+                <div class="LogoCont">Dev University</div>
+                <form action="CadProfPHP.php" method="post" class="FormContent animateanimated animateheartBeat animate__delay-1s">
+                    <input type="email" name="email" id="nome" placeholder="Email" class="inputype formInput">
+                    <input type="password" name="senha" id="Password" placeholder="Digite sua senha: " class="inputype formInput">
+                    <button type="submit" class="SubmitButton" disabled>Cadastre-se</button>
                 </form>
-                <form action="index.php" method="get">
-                    <button type="submit" class="indexBtn"> Voltar </button>
-                </form>
-            <div>
+                <div class="warning">Por favor preencha os campos acima</div>
+            </div>
+            </div>
         </div>
     </div>
 </body>

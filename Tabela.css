@@ -9,6 +9,7 @@ body {
 .table-container {
     margin: 20px;
     overflow-x: auto;
+    max-height: 800px;
 }
 
 .custom-table {
@@ -44,3 +45,37 @@ body {
 .delete-link:hover {
     text-decoration: underline;
 }
+
+
+.CadAluno, .Logout {
+    display: block;
+    
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.CadAluno:hover {
+    transition: 0.4s;
+    background-color: #3d8e42;
+}
+
+.Logout:hover {
+    transition: 0.4s;
+    background-color: rgb(255, 65, 61);
+}
+
+
+
+.Botoes {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+

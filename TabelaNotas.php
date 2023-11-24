@@ -54,13 +54,14 @@
         $conexao->close();
         ?>
     </div>
+    <div class="Botoes">
     <form action="CadAlunoHTML.php" method="get">
         <button type="submit" class="CadAluno">Cadastrar Aluno</button>
     </form>
     <form action="logout.php" method="post">
         <button type="submit" class="Logout">Finalizar Sessão</button>
     </form> 
-
+    </div>
 </body>
 
 </html>

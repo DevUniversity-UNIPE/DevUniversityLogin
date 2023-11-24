@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Log in</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <div class="pageTitle animate__animated animate__backInDown">
+        <h1>Bem vindo a página de Log in</h1>
+        <small>Se você ainda não possui uma conta, cadastre-se!</small>
+    </div>
     <div class="container">
         <div class="LeftCont animate__animated animate__backInLeft">
             <img src="./image/logoU1.png" class="Logo">

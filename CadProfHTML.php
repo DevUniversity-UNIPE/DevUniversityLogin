@@ -4,17 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <h1 class="pageTitle animate__animated animate__backInDown">Bem vindo a página de cadastro!</h1>
     <div class="container">
-        <div class="formCont">
-            <form action="CadProfPHP.php" method="post">
-                <input type="email" placeholder="Digite seu email" name="email">
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha:">
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="LeftCont animate__animated animate__backInLeft">
+            <img src="./image/logoU1.png" class="Logo">
+        </div>
+        <div class="RightCont animate__animated animate__backInRight">
+            <div class="FormCont">
+                <div class="LogoCont">Dev University</div>
+                <form action="CadProfPHP.php" method="post" class="FormContent animate__animated animate__heartBeat animate__delay-1s">
+                    <input type="email" name="email" id="nome" placeholder="Email" class="inputype formInput">
+                    <input type="password" name="senha" id="Password" placeholder="Digite sua senha: " class="inputype formInput">
+                    <button type="submit" class="SubmitButton" disabled>Cadastre-se</button>
+                </form>
+                <div class="warning">Por favor preencha os campos acima</div>
+            </div>
+            </div>
         </div>
     </div>
 </body>

@@ -5,7 +5,7 @@ session_start();
 
 
 if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {
-    print "Please enter your email address";
+    print "Por favor, faça o login primeiro...";
 } else {
     $email = $_POST["email"];
     $senha = $_POST["senha"];

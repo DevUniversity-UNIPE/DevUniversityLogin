@@ -14,7 +14,7 @@ if (isset($_GET['matricula'])) {
         echo "Erro ao excluir usuário: " . $conexao->error;
     }
 } else {
-    echo "ID do usuário não fornecido.";
+    echo "Matricula do usuário não fornecido.";
 }
 
 

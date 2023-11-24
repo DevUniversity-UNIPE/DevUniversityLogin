@@ -39,7 +39,7 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
         mysqli_stmt_execute($stmt_insert_user);
 
         if (mysqli_stmt_affected_rows($stmt_insert_user) > 0) {
-            echo "CADASTRADO COM SUCESSO";
+            header("Location: index.php");
         } else {
             echo "Erro ao cadastrar usuário: " . mysqli_error($conexao);
         }

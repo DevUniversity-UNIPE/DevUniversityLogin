@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@700&family=Sora&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
+body{
+    background-color:#0777A6;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2px;
+    width: 100%;
+}
+
+.logoImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+.FormCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 370px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 5px #1D538B;
+    background-color:white;
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+.welcomeTxt{
+    margin-top: 30px;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+}
+
+.logoName{
+    margin-top: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.LogoCont{
+    margin-top: 20px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 30px;
+}
+.FormContent{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    height: 100px;
+    font-family: 'Asap Condensed', sans-serif;
+}   
+
+.inputPlaceholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+input{
+
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    background-color: #EDEDED ;
+    border-radius: 3px;
+    margin: 5px 0px 5px 0px;
+    width:268px;
+    padding-left: 5px;
+}
+
+::placeholder{
+    font-family: 'Sora', sans-serif;
+}
+
+.inputype{
+    padding: 6px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.069);
+    border: 1px solid rgba(0, 0, 0, 0.257);
+    border-radius: 4px;
+}
+
+.DivSubmitBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubmitBtn{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #083f64;
+    width: 200px;
+    height: 32px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+
+.indexBtn{
+    margin-top: 0px;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #4CB5F9;
+    width: 100px;
+    height: 32px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    align-items: center;
+}
+
+
+.Cad{
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+}
+
+.Logo{
+    height: 200px;
+}

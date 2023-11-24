@@ -6,3 +6,4 @@ $database = "register";
 
 $conexao = mysqli_connect($host, $user, $password) or die("Erro na conexão");
 ?>
+

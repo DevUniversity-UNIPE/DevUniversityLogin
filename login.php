@@ -29,3 +29,4 @@ if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {
     }
 }
 ?>
+

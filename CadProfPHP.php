@@ -54,3 +54,4 @@ if (isset($_POST['email']) && isset($_POST['senha'])) {
     echo "Dados incompletos. Por favor, forneça um e-mail e uma senha.";
 }
 ?>
+

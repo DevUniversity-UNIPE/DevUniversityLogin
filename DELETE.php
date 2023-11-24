@@ -21,3 +21,4 @@ if (isset($_GET['matricula'])) {
 header("Location: TabelaNotas.php");
 
 $conexao->close();
+?>

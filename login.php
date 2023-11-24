@@ -2,10 +2,6 @@
 include("conexao.php");
 
 session_start();
-if (!isset($_SESSION["email"])) {
-    header("Location: login.php");
-    exit();
-}
 
 
 if (empty($_POST) or empty($_POST["email"]) or empty($_POST["senha"])) {
